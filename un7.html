@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript partI</title>
+</head>
+<body>
+    <!--This following method will be focused on Array and pop method.-->
+    <h2>Hello! here we are focused on Array and pop() method together with onclick function.</h2>
+    <button id="btn" onclick="Array()" style="width: 100px; border-radius: 5px; background-color: #00ff; color: #fff; border: 0; font-size: 18px; cursor: pointer;">Display</button>
+    <h4>Result</h4>
+    <h5 id="note" style="visibility: hidden;">Note that as long as you are removing an element in array,<br> as well as the length of array becomes lower </h5>
+    <p id="viewer">Please, click the button above to import data from array here.</p>
+    <p id="sort"></p>
+    <span id="sortIt" onclick="Sorter()" 
+    style="cursor: pointer;
+    background: yellow; color: red; width: fit-content; visibility: hidden;">
+        Click here<br>to sort names up
+    </span>
+    <p id="rmv" onclick="Remove()"
+    style="width: fit-content;
+    background: #ecec; cursor: pointer; visibility: hidden; position: absolute;">
+    Remove the last name<br>from sorted array</p>
+    <p id="add" onclick="Add()" style="width: fit-content;
+    background: #ecec; cursor: pointer; visibility: hidden;">
+    Readd the element<br> removed in sorted array</p>
+
+    <script>
+        //This is the onclick function to display names from an array.
+        var idnames = ["John ", "Christian ", "Boerk ", "Angle ", "Hope"];
+        var idnames2 = ["John ", "Christian ", "Boerk ", "Angle ", "Hope"]
+        function Array(){
+            document.getElementById("viewer").innerHTML="Array names: "+idnames;
+            document.getElementById("sortIt").style.visibility="visible";
+            document.getElementById("add").style.visibility="hidden";
+        }
+        function Sorter(){
+            document.getElementById("sort").innerHTML="Sorted array: "+idnames.sort();
+            document.getElementById("sort").style.fontSize="20px";
+            document.getElementById("rmv").style.visibility="visible";
+        }
+        function Remove(){
+            idnames.pop();
+            document.getElementById("rmv").style.visibility="hidden";
+            document.getElementById("sort").innerHTML="Array names: "+idnames;
+            document.getElementById("add").style.visibility="visible";
+            document.getElementById("btn").innerHTML="Check elements";
+            document.getElementById("note").style.visibility="visible";
+            document.getElementById("note").style.color="red";
+
+        }
+        function Add(){
+            document.getElementById("add").style.visibility="hidden";
+            document.getElementById("sort").innerHTML="Sorted array: "+idnames2.sort();
+            document.getElementById("rmv").style.visibility="visible";
+        }
+    </script>
+</body>
+</html>
