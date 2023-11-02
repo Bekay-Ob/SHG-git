@@ -1,0 +1,387 @@
+body{
+    margin: 0%;
+    padding: 1px;
+}
+.Edu-container{
+    background-color: rgba(5, 25, 246, 0.2);
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.header2{
+    position: relative;
+    background-color: #02ff;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border: 2px solid #fff;
+    padding: 10px 25px;
+
+}
+.header2 .navbar2>.menu{
+    /*display: flex;
+    align-items: right;
+    justify-content: center;
+    border: 1px solid #fff;
+    float: right;*/
+    padding: 10px;
+    float: right;
+    position: absolute;
+    right: 10px;
+    bottom: 5%;
+}
+.menu a{
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 6px;
+    box-shadow: 2px 3px 2px #000;
+    font-weight: 500;
+    border-top: 1px solid #000;
+}
+.menu a:nth-child(2){
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    color: #02ff;
+}
+.menu a:hover, .menu:active{
+    text-decoration: underline;
+    font-size: 20px;
+    color: rgb(3, 19, 125);
+    background-color: #cdcbcb;
+    transition-duration: 1.5s;
+
+}
+#times{
+    visibility: hidden;
+}
+#dropmenu{
+    visibility: hidden;
+}
+.MenuIcons{
+position:relative;
+border: 2px solid #000;
+text-align: center;
+padding: 12px;
+float: right;
+margin-right: 5%;
+display: flex;
+align-items: center;
+justify-content: center;
+visibility: hidden;
+
+}
+.MenuIcons:hover{
+background-color: #00ff;
+box-shadow: 3px 3px 0 #fff;
+border-radius: 50%;
+transition: all 2s;
+}
+.menulists{
+background-color: rgba(9, 5, 250, 0.6);
+border: 2px solid #fff;
+border-top: 0;
+font-size: 12px;
+font-weight: bold;
+position: absolute;
+top: 100%;
+right: 0;
+display: grid;
+grid-template-columns: 1fr 1fr;
+column-gap: 10px;
+}
+.menulists a{
+display: block;
+margin-top: 10px;
+background-color: #00ff;
+padding: 10px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+text-align: center;
+color: #fff;
+}
+.menulists a:nth-child(2){
+background-color: #fff;
+color: #00ff;
+font-size: 13px;
+font-weight: bold;
+}
+.menulists a:hover{
+background-color: #fff;
+font-size: 13px;
+color: #00ff;
+font-weight: bold;
+text-decoration: none;
+transition: background-color 3s;
+}
+.navbar2{
+    padding: 10px;
+}
+
+#dropMenuList{
+    visibility: hidden;
+    z-index: 1;
+    position: absolute;
+}
+.joinus{
+    grid-column: 1/span 2;
+    color: #ff0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+.footer2{
+    grid-column: 1/span 3;
+    background-color: #1b02fe;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.socialmedia{
+    padding: 5px;
+    margin-left: 15px;
+}
+.socialmedia a{
+    text-decoration: none;
+    color: #fff;
+    margin: 15px;
+    padding: 5px;
+}
+.socialmedia a:hover{
+    text-decoration: none;
+    color: #00ff;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 5px;
+    transition:color 2s;
+}
+.ok img{
+    border-radius: 20px;
+    box-shadow: 2px 1px 2px white;
+}
+.ok{
+    text-align: center;
+    color: #fff;
+    text-shadow: 3px 2px 2px #000;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.5), black, rgba(0,0,0,0.5));
+    padding: 10px;
+}
+.EdMsg h3, big, #p1{
+    padding: 5px;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 0 15px 0;
+    text-shadow: 2px 1px 2px #000;
+}
+.EdMsg{
+    padding: 5px 25px;
+    grid-column: 1/span 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #cdcbcb;
+}
+.b_Content{
+    grid-column: 1/span 3;
+    background: url(IMG/BgIm/SABC-News-pupils-Reuters.jpg) repeat;
+    opacity: 0.7;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+form a{
+    color: blue;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: white;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.Sign1 img{
+    position: relative;
+    right: -25%;
+}
+.Sign1 form{
+    width: fit-content;
+    padding: 10px;
+    background-color: rgb(252, 251, 251);
+    border-radius: 19px 19px 0px 0px;
+}
+#subtn:hover{
+    background-color: transparent;
+    color: #000;
+    box-shadow: 1px 0px 1px black;
+    font-size: 13px;
+    font-weight: bold;
+    transition: background-color 1s, color 2s;
+}
+#subtn{
+    transition: background-color 3s, color 2s;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    float: right;
+    width: 50%;
+    border-radius: 10px;
+    border: 0;
+    margin-top: 10px;
+    padding: 5px;
+}
+.Sign1 .input{
+    margin-left: 15px;
+    margin-top: 10px;
+    border: 0;
+    border-collapse: collapse;
+    border-bottom: 1px solid #45ff;
+
+}
+@media only screen and (max-width:1155px){
+
+    .ok img{
+        width: 250px;
+    }
+    .menu a{
+        text-align: center;
+        margin-right: 15px;
+        text-decoration: none;
+        font-size: 12px;
+        color: #fff;
+        background-color: #02ff;
+        padding: 5px;
+        border-radius: 6px;
+        box-shadow: 2px 3px 2px #000;
+        font-weight: 500;
+        border-top: 1px solid #000;
+    }
+    .menu a:hover{
+        text-align: center;
+        margin-right: 15px;
+        text-decoration: none;
+        font-size: 11px;
+        color: #1b02fe;
+        background-color: #ffffff;
+        padding: 5px;
+        border-radius: 6px;
+        box-shadow: 2px 3px 2px #000;
+        font-weight: bold;
+        border-top: 0px solid #000;
+    }
+    .menu a:nth-child(2){
+        font-size: 15px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #fff;
+        color: #02ff;
+        border-top: 1px solid #000;
+    }
+    .menu{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 10px;
+    }
+    .menu a:nth-child(7){
+        grid-column-start: 3;
+    }
+    .LogoI img{
+        width: 160px;
+        border-radius: 5px;
+    }
+    #dropMenuList{
+        visibility: hidden;
+    }
+.MenuIcons{
+    visibility: hidden;
+}
+#times{
+    visibility: hidden;
+}
+#dropmenu{
+    visibility: hidden;
+}
+.footer2{
+    grid-column: 1/span 3;
+    background-color: #1b02fe;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.joinus{
+    text-align: right;
+    padding-right: 5%;
+    margin-right: 15px;
+}
+.socialmedia{
+    padding: 5px;
+    margin-left: 10px;
+    text-align: left;
+}
+.socialmedia a{
+    text-decoration: none;
+    color: #fff;
+} 
+}
+@media screen and (max-width:600px){
+    .Sign1{
+        position: relative;
+        left: 50%;
+    }
+    .Sign1 .input{
+        margin-left: 10px;
+        margin-top: 10px;
+        border: 0;
+        border-bottom: 1px solid #45ff;
+        width: 100px;
+    
+    }
+    .Sign1 img{
+        width: 80px;
+        position: relative;
+        right: -25%;
+    }
+    .acts2, .acts1{
+        grid-column: 1/span 2;
+    }
+    .ok img{
+        width: 350px;
+    }
+    .joinus{
+        text-align: center;
+    }
+     .menu{
+        visibility: hidden;
+    }
+    .LogoI img{
+        width: 110px;
+        border-radius: 10px;
+    }
+        .b_Content{
+        grid-column: 1/span 3;
+        background: url("IMG/BgIm/SABC-News-pupils-Reuters.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0.6;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        }
+        #dropMenuList{
+            visibility: hidden;
+        }
+    .MenuIcons{
+        visibility: visible;
+    }
+    #times{
+        visibility: hidden;
+    }
+    #dropmenu{
+        z-index: 1;
+        position: relative;
+        visibility: visible;
+    }
+}

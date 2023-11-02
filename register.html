@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save_Human_Generation</title>
+    <script src="JS/interX.js"></script>
+    <link rel="stylesheet" href="Css/finish7.css">
+    <link rel="Icon" type="image/jpg" href="IMG/Logo/SHGlogo2.jpg">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="Regis-container">
+        <div class="header7">
+            <div class="LogoI">
+                <img src="IMG/Logo/SHGlogo.jpg" alt="SHG-Logo" width="220px" style="border-radius: 5%;">
+            </div>
+            <div class="navbar7">
+                <div class="menu">
+                    <a href="index.html">HOME</a>
+                    <a href="edu.html">EDUCATION</a>
+                    <a href="envir.html">ENVIRONMENT</a>
+                    <a href="lead.html">LEADERSHIP</a>
+                    <a href="donate.html">DONATE</a>
+                    <a href="about.html">ABOUT US</a>
+                    <a href="register.html">SIGN UP</a>
+                </div>
+                <div class="MenuIcons" onclick="Menulists()">
+                    <i id="times" class="fa-solid fa-xmark" style="font-size: 55px; color: white; cursor: pointer; position: absolute;" onclick="Hidem()"></i>
+                    <i id="dropmenu" class="fa-solid fa-bars" style="font-size: 48px; color: white; cursor: pointer;" onclick="Showm()"></i>
+                </div>
+                <div class="menulists" id="dropMenuList">
+                    <a href="index.html" class="button">HOME</a>
+                    <a href="edu.html" class="button">EDUCATION</a>
+                    <a href="envir.html" class="button">ENVIRONMENT</a>
+                    <a href="lead.html" class="button">LEADERSHIP</a>
+                    <a href="donate.html" class="button">DONATE</a>
+                    <a href="about.html" class="button">ABOUT US</a>
+                    <a href="Register.html" class="button">SIGN UP</a>
+                </div>
+            </div>
+        </div>
+        <div class="g_Content">
+            <div class="Sign1">
+                <form action="register.html" method="post">
+                    <table cellpadding="10px">
+                        <tr>
+                            <th colspan="2">REGISTRATION FORM</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="Fname">First Name:</label>
+                                <input type="text" name="username" id="Username" placeholder="First Name..."><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="Sname">Second Name:</label>
+                                <input type="text" name="secondname" id="Sname" placeholder="Second Name..."><br></td>
+                            <td><label for="lname">Last Name:</label>
+                                <input type="text" name="lastname" id="Lname" placeholder="Last Name..."><br></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="Username">Username:</label>
+                                <input type="text" name="username" id="Username" placeholder="User Name/email..."><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Gender:
+                                <input type="radio" name="geneder" id="Sex" value="male">Male 
+                                <input type="radio" name="geneder" id="Sex" value="female"> Female
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="Nationality">Nationality:</label>
+                                <input type="text" name="country" id="Nationality" placeholder="Nationality..."><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="Current">Current Country:</label>
+                                <input type="text" name="country" id="Current" placeholder="actual country..."><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="Address">Address:</label>
+                                <input type="text" name="address" id="Address" placeholder="Address..."><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="Phone">Phone:</label>
+                                <input type="text" name="phone" id="Phone" placeholder="Phone number..."><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="Usermail">Email:</label>
+                                <input type="email" name="Email" id="Usermail" placeholder="Email..."><br></td>
+                            <td><label for="UsermailC">Confirm Email:</label>
+                                <input type="email" name="lastname" id="UsermailC" placeholder="Confirm email..."><br></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="UserCode1">Password:</label>
+                            <input type="password" name="usercode2" id="UserCode1" placeholder="password...">
+                            </td>
+                            <td>
+                                <label for="UserCode2">Password:</label>
+                            <input type="text" name="usercode2" id="UserCode2" placeholder="password...">
+                            </td>
+                        </tr>
+                        <tr><td rowspan="2">
+                            <P>I have already an account, <a href="index.html">Sign In</a> your account.</P>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" name="login" value="LOG IN" id="subtn" onclick="LogIn()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><span id="msg"></span></td>
+                    </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="footer7">
+            <div class="joinus">Join Us</div>
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/profile.php?id=61551439470720" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://twitter.com/erickobedi88" target="_blank" rel="noopener noreferrer">Twiter</a>
+                <a href="https://instagram.com/shg_for_all/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.youtube.com/@SAVEHUMANGENERATION/videos" target="_blank" rel="noopener noreferrer">Youtube</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

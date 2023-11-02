@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save_Human_Generation</title>
+    <script src="JS/interX.js"></script>
+    <link rel="stylesheet" href="Css/finish2.css">
+    <link rel="Icon" type="image/jpg" href="IMG/Logo/SHGlogo2.jpg">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="Edu-container">
+        <div class="header2">
+            <div class="LogoI">
+                <img src="IMG/Logo/SHGlogo.jpg" alt="SHG-Logo" width="220px" style="border-radius: 5%;">
+            </div>
+            <div class="navbar2">
+                <div class="menu">
+                    <a href="index.html">HOME</a>
+                    <a href="edu.html">EDUCATION</a>
+                    <a href="envir.html">ENVIRONMENT</a>
+                    <a href="lead.html">LEADERSHIP</a>
+                    <a href="donate.html">DONATE</a>
+                    <a href="about.html">ABOUT US</a>
+                    <a href="Register.html">SIGN UP</a>
+                </div>
+                <div class="MenuIcons" onclick="Menulists()">
+                    <i id="times" class="fa-solid fa-xmark" style="font-size: 55px; color: white; cursor: pointer; position: absolute;" onclick="Hidem()"></i>
+                    <i id="dropmenu" class="fa-solid fa-bars" style="font-size: 48px; color: white; cursor: pointer;" onclick="Showm()"></i>
+                </div>
+                <div class="menulists" id="dropMenuList">
+                    <a href="index.html" class="button">HOME</a>
+                    <a href="edu.html" class="button">EDUCATION</a>
+                    <a href="envir.html" class="button">ENVIRONMENT</a>
+                    <a href="lead.html" class="button">LEADERSHIP</a>
+                    <a href="donate.html" class="button">DONATE</a>
+                    <a href="about.html" class="button">ABOUT US</a>
+                    <a href="Register.html" class="button">SIGN UP</a>
+                </div>
+            </div>
+        </div>
+        <div class="b_Content">
+            <div class="EdMsg">
+                <h3>LEARN TO TEACH THE COMMUNITY</h3>
+                <big>It is shameful that the government invests so little in education while spending so much on weapons.</big>
+                <p id="p1">The ability to discriminate between right and wrong and become better citizens are all made possible by education.</p>
+            </div>
+            <div class="acts1 ok">
+                <img src="IMG/BgIm/dona&Edu_WB.jpg" alt="Edu-image" width="450px">
+                <h5>Education is my first priority, <br>I enjoy learning.</h5>
+            </div>
+            <div class="acts2 ok">
+                <img src="IMG/BgIm/Edu&L_WB.jpg" alt="Edu-image" width="500px">
+                <h5>Education is our first priority. <br>So, we encourage dear parents to keep supporting us on studies.</h5>
+            </div>
+            <div class="Sign1">
+                <form action="edu.html" method="post">
+                    <img src="Css/IMG/BgIm/avatar.png" alt="avatar" width="100px"><br>
+                    <label for="Username">Username:</label>
+                    <input type="text" class="input" name="username" id="Username" placeholder="username..."><br>
+                    <label for="UserCode">Password:</label>
+                    <input type="password" class="input" name="usercode" id="UserCode" placeholder="password..."><br>
+                    <input type="submit" name="login" value="LOG IN" id="subtn" onclick="LogIn()">
+                    <P>I have no account, <a href="register.html">Create New</a> to access.</P>
+                    <span id="msg"></span>
+                </form>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="joinus">Join Us</div>
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/profile.php?id=61551439470720" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://twitter.com/erickobedi88" target="_blank" rel="noopener noreferrer">Twiter</a>
+                <a href="https://instagram.com/shg_for_all/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.youtube.com/@SAVEHUMANGENERATION/videos" target="_blank" rel="noopener noreferrer">Youtube</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

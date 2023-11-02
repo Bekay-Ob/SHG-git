@@ -1,0 +1,332 @@
+body{
+    margin: 0%;
+    padding: 1px;
+}
+.Home-container{
+    background-color: rgba(5, 25, 246, 0.2);
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+}
+.header1{
+    position: relative;
+    background-color: #02ff;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border: 2px solid #fff;
+    padding: 10px 25px;
+
+}
+.header1 .navbar1>.menu{
+    padding: 10px;
+    float: right;
+    position: absolute;
+    right: 10px;
+    bottom: 5%;
+}
+.menu a{
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    background-color: #02ff;
+    padding: 5px;
+    border-radius: 6px;
+    box-shadow: 2px 3px 2px #000;
+    font-weight: 500;
+    border-top: 1px solid #000;
+}
+.menu a:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    color: #02ff;
+}
+.menu a:hover, .menu:active{
+    text-decoration: underline;
+    font-size: 20px;
+    color: rgb(3, 19, 125);
+    background-color: #cdcbcb;
+    transition-duration: 1.5s;
+
+}
+
+    #times{
+        visibility: hidden;
+    }
+    #dropmenu{
+        visibility: hidden;
+    }
+.MenuIcons{
+    position:relative;
+    border: 2px solid #000;
+    text-align: center;
+    padding: 12px;
+    float: right;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+
+}
+.MenuIcons:hover{
+    background-color: #00ff;
+    box-shadow: 3px 3px 0 #fff;
+    border-radius: 50%;
+    transition: all 2s;
+}
+.menulists{
+    background-color: rgba(9, 5, 250, 0.6);
+    border: 2px solid #fff;
+    border-top: 0;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+.menulists a{
+    display: block;
+    margin-top: 10px;
+    background-color: #00ff;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+.menulists a:nth-child(1){
+    background-color: #fff;
+    color: #00ff;
+    font-size: 13px;
+    font-weight: bold;
+}
+.menulists a:hover{
+    background-color: #fff;
+    font-size: 13px;
+    color: #00ff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 3s;
+}
+
+.navbar1{
+    padding: 10px;
+}
+.a_Content{
+   grid-row-start: 2;
+   grid-column-start: 1;
+   grid-column-end: 4;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+   padding: 5px;
+   color: #fff;
+   text-shadow: 2px 2px 1px #000;
+    
+}
+.History{
+    grid-column: 1/span 3;
+}
+.a_Content .BgI{
+    grid-column: 1/span 3;
+    background: url("IMG/BgIm/get.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    background-size: 100%;
+    height: 400px;
+    background-attachment: fixed;
+    padding: 10px;
+}
+.Message2 img, .Message3 img, .Message4 img, .a_Content a{
+border-radius: 50px;
+border: 0;
+font-size: 15px;
+color: rgb(2, 2, 2);
+text-shadow: none;
+}
+.joinus{
+    grid-column: 1/span 2;
+    color: #ff0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+.footer1{
+    grid-column: 1/span 3;
+    background-color: #1b02fe;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.socialmedia{
+    padding: 5px;
+    margin-left: 15px;
+}
+.socialmedia a{
+    text-decoration: none;
+    color: #fff;
+    margin: 15px;
+    padding: 5px;
+}
+.socialmedia a:hover{
+    text-decoration: none;
+    color: #00ff;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 5px;
+    transition:color 2s;
+}
+#dropMenuList{
+    visibility: hidden;
+    z-index: 1;
+    position: absolute;
+}
+@media only screen and (max-width:1155px){
+
+    .menu a{
+        text-align: center;
+        margin-right: 15px;
+        text-decoration: none;
+        font-size: 12px;
+        color: #fff;
+        background-color: #02ff;
+        padding: 5px;
+        border-radius: 6px;
+        box-shadow: 2px 3px 2px #000;
+        font-weight: 500;
+        border-top: 1px solid #000;
+    }
+    .menu a:hover{
+        text-align: center;
+        margin-right: 15px;
+        text-decoration: none;
+        font-size: 11px;
+        color: #1b02fe;
+        background-color: #ffffff;
+        padding: 5px;
+        border-radius: 6px;
+        box-shadow: 2px 3px 2px #000;
+        font-weight: bold;
+        border-top: 0px solid #000;
+    }
+    .menu a:nth-child(1){
+        font-size: 15px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #fff;
+        color: #02ff;
+    }
+    .menu{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 10px;
+    }
+    .menu a:nth-child(7){
+        grid-column-start: 3;
+    }
+    .LogoI img{
+        width: 160px;
+        border-radius: 5px;
+    }
+    .a_Content .BgI{
+        grid-column: 1/span 3;
+    }
+    #dropMenuList{
+        visibility: hidden;
+    }
+.MenuIcons{
+    visibility: hidden;
+}
+#times{
+    visibility: hidden;
+}
+#dropmenu{
+    visibility: hidden;
+}
+.footer1{
+    grid-column: 1/span 3;
+    background-color: #1b02fe;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.joinus{
+    text-align: right;
+    padding-right: 5%;
+    margin-right: 15px;
+}
+.socialmedia{
+    padding: 5px;
+    margin-left: 10px;
+    text-align: left;
+}
+.socialmedia a{
+    text-decoration: none;
+    color: #fff;
+}
+.Message2 img, .Message3 img, .Message4 img{
+    width: 200px;
+}
+.a_Content .BgI{
+    grid-column: 1/span 3;
+    background: url("IMG/BgIm/get.jpg");
+    background-repeat: repeat;
+    opacity: 0.6;
+    padding: 10px;
+    }
+}
+@media screen and (max-width:600px){
+    .joinus{
+        text-align: center;
+    }
+    .a_Content{
+        grid-column: 1/span 3;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 15px;
+        padding: 5px;
+         
+     }
+     .menu{
+        visibility: hidden;
+    }
+    .LogoI img{
+        width: 110px;
+        border-radius: 10px;
+    }
+        .a_Content .BgI{
+        grid-column: 1/span 3;
+        background: url("IMG/BgIm/get.jpg");
+        background-repeat: no-repeat;
+        width: 100%;
+        opacity: 0.6;
+        padding: 10px;
+        }
+        .Message2, .Message3, .Message4{
+            grid-column: 1/span 3;
+            background-color: rgba(9, 5, 250, 0.6);
+            padding: 10px;
+        }
+        #dropMenuList{
+            visibility: hidden;
+        }
+    .MenuIcons{
+        visibility: visible;
+    }
+    #times{
+        visibility: hidden;
+    }
+    #dropmenu{
+        visibility: visible;
+    }
+}
